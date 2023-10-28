@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel, Tijeras, lagarto, Spock</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <header id="gameStart">
+        <h1>Introduce tu nombre:</h1>
+        <input type="text" id="inputName" placeholder="Nombre">
+        <button id="start">¡Jugar!</button>
+    </header>
+    <div id="gameDiv">
+        <div id="player">
+            <p id="name">Tú:</p>
+            <button class="choiceBtn" disabled><i class="fa-solid fa-hand-back-fist"></i></button>
+            <button class="choiceBtn" disabled><i class="fa-solid fa-hand"></i></button>
+            <button class="choiceBtn" disabled><i class="fa-solid fa-hand-scissors"></i></button>
+            <button class="choiceBtn" disabled><i class="fa-solid fa-hand-lizard"></i></button>
+            <button class="choiceBtn" disabled><i class="fa-solid fa-hand-spock"></i></button>
+        </div>
+        <div id="playerChoose"></div>
+        <div id="counter">
+            <div class="scoreBoard">
+                <span id="userScore">0</span>-<span id="computerScore">0</span>
+            </div>
+            <img src="src/img/luchaWhiteBold.png" alt="vs" srcset="">
+            <p id="resultado">.</p>
+        </div>
+        <div id="computerChoose"></div>
+        <div id="computer">
+            <p>Ordenador</p>
+            <button class="computerBtn" disabled><i class="fa-solid fa-hand-back-fist"></i></button>
+            <button class="computerBtn" disabled><i class="fa-solid fa-hand"></i></button>
+            <button class="computerBtn" disabled><i class="fa-solid fa-hand-scissors"></i></button>
+            <button class="computerBtn" disabled><i class="fa-solid fa-hand-lizard"></i></button>
+            <button class="computerBtn" disabled><i class="fa-solid fa-hand-spock"></i></button>
+        </div>
+    </div>
+    <script src="src/index.js"></script>
+    <script src="https://kit.fontawesome.com/7ddf366122.js" crossorigin="anonymous"></script>
+</body>
+</html>
